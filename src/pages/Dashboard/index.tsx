@@ -35,7 +35,7 @@ const Dashboard: React.FC = () => {
     } else {
       api
         .get(
-          'https://my-json-server.typicode.com/james-delivery/frontend-challenge/establishments',
+          'https://api.jsonbin.io/b/5f6785857243cd7e824006d3',
         )
         .then(response => {
           setEstablishments(response.data);
