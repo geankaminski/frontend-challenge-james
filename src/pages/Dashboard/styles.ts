@@ -57,7 +57,6 @@ export const Establishments = styled.div`
     div {
       margin-left: 16px;
       display: flex;
-      flex: 1;
 
       strong {
         font-size: 18px;
@@ -65,6 +64,7 @@ export const Establishments = styled.div`
         color: #4c5164;
         align-self: center;
         margin: 10px 0px;
+        padding-bottom: 20px;
       }
 
       span {
@@ -73,14 +73,17 @@ export const Establishments = styled.div`
         color: #81879c;
         align-self: center;
         margin-left: 12px;
+        padding-bottom: 18px;
       }
 
       p {
-        display: block;
+        display: inline-block;
         font-size: 15px;
         color: #81879c;
         line-height: 17px;
         align-self: center;
+        padding-right: 150px;
+        padding-top: 24px;
       }
     }
   }

@@ -7,7 +7,7 @@ import Establishment from '../pages/Establishment';
 const Routes: React.FC = () => (
   <Switch>
     <Route path="/" exact component={Dashboard} />
-    <Route path="/establishment/:name" component={Establishment} />
+    <Route path="/establishment/:index" component={Establishment} />
   </Switch>
 );
 

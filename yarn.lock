@@ -9212,6 +9212,11 @@ react-fast-compare@^2.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-hook-form@^6.8.3:
+  version "6.8.3"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.8.3.tgz#208f46b96ced2859e2a3465eef8125751e99e4ee"
+  integrity sha512-IsYcATD4fodv9BiwWBwiBHE50+IyvhpPTi+jIab4fQZLbDPJnN7YXnJ+/2oMXDJ94n+PnUs4wklr9pg8TNdOrQ==
+
 react-icons@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
