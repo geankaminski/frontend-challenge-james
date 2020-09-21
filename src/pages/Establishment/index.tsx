@@ -168,8 +168,8 @@ const Establishment: React.FC = () => {
                 </select>
               </div>
               <div>
-                <label htmlFor="code">CPF/CNPJ</label>
-                <input id="code" name="code" />
+                <label htmlFor="cpf">CPF/CNPJ</label>
+                <input id="cpf" name="code" />
               </div>
               <div>
                 <label htmlFor="agency">Agência</label>
@@ -182,8 +182,8 @@ const Establishment: React.FC = () => {
               <div>
                 <label htmlFor="sAutomatic">Saque automático?</label>
                 <select name="sAutomatic" id="sAutomatic">
-                  <option value="xxx" label="Sim" />
-                  <option value="xxx" label="Não" />
+                  <option value="" label="Sim" />
+                  <option value="" label="Não" />
                 </select>
               </div>
             </section>

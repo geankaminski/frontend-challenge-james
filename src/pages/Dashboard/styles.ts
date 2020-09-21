@@ -56,15 +56,14 @@ export const Establishments = styled.div`
 
     div {
       margin-left: 16px;
-      display: flex;
+      display: block;
 
       strong {
         font-size: 18px;
         line-height: 21px;
         color: #4c5164;
         align-self: center;
-        margin: 10px 0px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
       }
 
       span {
@@ -72,18 +71,17 @@ export const Establishments = styled.div`
         line-height: 16px;
         color: #81879c;
         align-self: center;
-        margin-left: 12px;
-        padding-bottom: 18px;
+        padding-left: 10px;
+        padding-bottom: 10px;
       }
 
       p {
-        display: inline-block;
         font-size: 15px;
         color: #81879c;
         line-height: 17px;
         align-self: center;
-        padding-right: 150px;
-        padding-top: 24px;
+        padding-top: 7px;
+        display: inline-block;
       }
     }
   }

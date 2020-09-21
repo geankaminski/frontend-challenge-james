@@ -34,7 +34,7 @@ const Dashboard: React.FC = () => {
     } else {
       api
         .get('https://api.jsonbin.io/b/5f6785857243cd7e824006d3')
-        .then(response => {
+        .then((response) => {
           response.data.map((resp: Response) => {
             const [street, state, city, houseNumber] = resp.address.split(',');
             const address = `${street}, ${houseNumber}, ${state}`;
@@ -69,17 +69,21 @@ const Dashboard: React.FC = () => {
 
       <Establishments>
         {establishments.length === 0 && <div>Carregando...</div>}
-        {establishments.map(establishment => (
+        {establishments.map((establishment) => (
           <Link
             key={establishment.id}
             to={`/establishment/${establishment.index}`}
           >
             <img src={EstablishmentImg} alt="Establishment Logo" />
             <div>
-              <strong>{establishment.name}</strong>
-              <span>{establishment.index}</span>
-              <p>{establishment.city}</p>
-              <span>{establishment.address}</span>
+              <div>
+                <strong>{establishment.name}</strong>
+                <span>{establishment.index}</span>
+              </div>
+              <div>
+                <p>{establishment.city}</p>
+                <span>{establishment.address}</span>
+              </div>
             </div>
           </Link>
         ))}
