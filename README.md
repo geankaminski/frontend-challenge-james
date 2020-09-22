@@ -11,12 +11,12 @@
 </h3>
 
 <p align="center">
-	 <img src="src/assets/james_screenshot.png" alt="Screenshot" width="800" height="427"/>
+	 <img src="src/assets/james_screenshot.png" alt="Screenshot" height="400"/>
 </p>
 
 ## Overview
 
-- **Modern features brought to IRC.** Push notifications, link previews, new message markers, and more bring IRC to the 21st century.
+- **Application to manage establishments information developed for the <a href="https://github.com/james-delivery/frontend-challenge">front-end challenge</a>
 - **Always connected.** Remains connected to IRC servers while you are offline.
 - **Cross platform.** It doesn't matter what OS you use, it just works wherever Node.js runs.
 - **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
