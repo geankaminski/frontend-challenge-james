@@ -16,42 +16,31 @@
 
 ## Overview
 
-- **Application to manage establishments information developed for the <a href="https://github.com/james-delivery/frontend-challenge">front-end challenge</a>
-- **Always connected.** Remains connected to IRC servers while you are offline.
-- **Cross platform.** It doesn't matter what OS you use, it just works wherever Node.js runs.
-- **Responsive interface.** The client works smoothly on every desktop, smartphone and tablet.
-- **Synchronized experience.** Always resume where you left off no matter what device.
-
-To learn more about configuration, usage and features of The Lounge, take a look at [the website](https://thelounge.chat).
-
-The Lounge is the official and community-managed fork of [Shout](https://github.com/erming/shout), by [Mattias Erming](https://github.com/erming).
+- Application to manage establishments information developed for the <a href="https://github.com/james-delivery/frontend-challenge">James' front-end challenge</a>.
+- It must be built with Angular but I don't know Angular... yet. I really like to learn new techs and I'm already studying this framework. For now, I'm using React.
+- The application consume this <a href="https://my-json-server.typicode.com/james-delivery/frontend-challenge">API</a>.
 
 ## Installation and usage
 
-The Lounge requires latest [Node.js](https://nodejs.org/) LTS version or more recent.
+**By convenience, the app is already deployed here [Front-end Challenge](https://frontend-challenge-james.vercel.app/).**
+
+The app requires latest [Node.js](https://nodejs.org/) LTS version or more recent.
 [Yarn package manager](https://yarnpkg.com/) is also recommended.  
-If you want to install with npm, `--unsafe-perm` is required for a correct install.
-
-### Running stable releases
-
-Please refer to the [install and upgrade documentation on our website](https://thelounge.chat/docs/install-and-upgrade) for all available installation methods.
 
 ### Running from source
 
-The following commands install and run the development version of The Lounge:
+The following commands install and run the development version of this application:
 
 ```sh
-git clone https://github.com/thelounge/thelounge.git
-cd thelounge
+git clone https://github.com/geankaminski/frontend-challenge-james.git
+cd frontend-challenge-james
 yarn install
-NODE_ENV=production yarn build
 yarn start
 ```
 
-When installed like this, `thelounge` executable is not created. Use `node index <command>` to run commands.
+After this, you can access by any browser the address <a href="http://localhost:3000/">http://localhost:3000/</a>.
 
-⚠️ While it is the most recent codebase, this is not production-ready! Run at
-your own risk. It is also not recommended to run this as root.
+
 
 
 
