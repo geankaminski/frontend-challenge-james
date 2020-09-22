@@ -7,7 +7,7 @@
 </h1>
 
 <h3 align="center">
-	Front-end Challenge 
+	:godmode: Front-end Challenge :godmode:
 </h3>
 
 <p align="center">
