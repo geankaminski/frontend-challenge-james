@@ -18,7 +18,7 @@
 
 - Application to manage establishments information developed for the <a href="https://github.com/james-delivery/frontend-challenge">James' front-end challenge</a>.
 - It must be built with Angular but I don't know Angular... yet. I really like to learn new techs and I'm already studying this framework. For now, I'm using React.
-- The application consume this <a href="https://my-json-server.typicode.com/james-delivery/frontend-challenge">API</a>.
+- The application consume this <a href="https://my-json-server.typicode.com/james-delivery/frontend-challenge">API</a> (sometimes stops working).
 
 ## Installation and usage
 
