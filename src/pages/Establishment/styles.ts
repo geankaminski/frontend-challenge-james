@@ -68,6 +68,7 @@ export const Details = styled.div`
         line-height: 16px;
         color: #81879c;
         margin-top: 4px;
+        padding-top: px;
       }
     }
   }

@@ -7,6 +7,10 @@ import EstablishmentImg from '../../assets/establishment_img.svg';
 
 import { Header, Establishments } from './styles';
 
+/*
+ * Only using the common data between the API and Figma Screenshots.
+ */
+
 interface Response {
   id: string;
   index: string;
@@ -32,8 +36,13 @@ const Dashboard: React.FC = () => {
     if (storageEstablishments) {
       setEstablishments(JSON.parse(storageEstablishments));
     } else {
+      /*
+       * Sometimes API stops responding. So I use this https://api.jsonbin.io/b/5f6785857243cd7e824006d3
+       */
       api
-        .get('https://api.jsonbin.io/b/5f6785857243cd7e824006d3')
+        .get(
+          'https://my-json-server.typicode.com/james-delivery/frontend-challenge/establishments',
+        )
         .then((response) => {
           response.data.map((resp: Response) => {
             const [street, state, city, houseNumber] = resp.address.split(',');
@@ -55,6 +64,9 @@ const Dashboard: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    /*
+     * Updating localStorage whenever establishments is modified.
+     */
     localStorage.setItem(
       '@JamesDelivery:establishments',
       JSON.stringify(establishments),
@@ -74,6 +86,9 @@ const Dashboard: React.FC = () => {
             key={establishment.id}
             to={`/establishment/${establishment.index}`}
           >
+            {/*
+             * I preferred to use the Figma images to make the page more beautiful 🏄
+             */}
             <img src={EstablishmentImg} alt="Establishment Logo" />
             <div>
               <div>
@@ -82,6 +97,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div>
                 <p>{establishment.city}</p>
+                <span>|</span>
                 <span>{establishment.address}</span>
               </div>
             </div>

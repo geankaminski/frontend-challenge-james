@@ -8,16 +8,16 @@ import EstablishmentImg from '../../assets/establishment_img.svg';
 
 import { Header, Details, DataInput } from './styles';
 
-interface EstablishmentParams {
-  index: string;
-}
-
 interface InitialValues {
   index: string;
   name: string;
   city: string;
   address: string;
 }
+
+/*
+ * InitialValues are decomposed in a Establishment (address -> city + (street, state, houseNumber))
+ */
 
 interface Establishment {
   id: string;
@@ -27,9 +27,10 @@ interface Establishment {
   address: string;
 }
 const Establishment: React.FC = () => {
-  const [redirect, setRedirect] = useState(false);
+  const { params } = useRouteMatch(); // Taking the index of the chosen establishment
+
+  const [redirect, setRedirect] = useState(false); // Redirect after submit form?
   const [establishments, setEstablishments] = useState<Establishment[]>([]);
-  const { params } = useRouteMatch();
   const { register, handleSubmit } = useForm<InitialValues>();
   const [initialEstablishment, setInitialEstablishment] = React.useState<
     Establishment
@@ -158,32 +159,36 @@ const Establishment: React.FC = () => {
             <section>
               <div>
                 <label htmlFor="bank">Banco</label>
-                <input id="bank" name="bank" />
+                <select id="bank">
+                  <option value="brasil">Banco do Brasil</option>
+                  <option value="bradesco">Caixa</option>
+                  <option value="itau">Itaú</option>
+                </select>
               </div>
               <div>
                 <label htmlFor="type">Tipo de Conta</label>
                 <select name="type" id="type">
-                  <option value="" label="Conta Corrente" />
-                  <option value="" label="Conta Poupança" />
+                  <option value="cc" label="Conta Corrente" />
+                  <option value="cp" label="Conta Poupança" />
                 </select>
               </div>
               <div>
                 <label htmlFor="cpf">CPF/CNPJ</label>
-                <input id="cpf" name="code" />
+                <input id="cpf" name="code" placeholder="18.986.066/0001-68" />
               </div>
               <div>
                 <label htmlFor="agency">Agência</label>
-                <input id="agency" name="agency" placeholder="XXXX-X" />
+                <input id="agency" name="agency" placeholder="0010-4" />
               </div>
               <div>
                 <label htmlFor="account">Conta</label>
-                <input id="account" name="account" placeholder="XXXXX-X" />
+                <input id="account" name="account" placeholder="25256-2" />
               </div>
               <div>
                 <label htmlFor="sAutomatic">Saque automático?</label>
                 <select name="sAutomatic" id="sAutomatic">
-                  <option value="" label="Sim" />
-                  <option value="" label="Não" />
+                  <option value="y" label="Sim" />
+                  <option value="n" label="Não" />
                 </select>
               </div>
             </section>
